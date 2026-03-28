@@ -1,3 +1,9 @@
+# Environment variables - NEVER commit this
+.env
+
+# Output files
+outputs/
+logs/
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
