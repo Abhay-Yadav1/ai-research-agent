@@ -171,7 +171,13 @@ def run_research_workflow(topic: str):
 """
 
     final_file = save_to_file(topic, report_content, "FINAL_REPORT")
-
+    # ── PHASE 5: Generate Presentation Content ─────────────
+    print_header("🎨 PHASE 5: Generating Presentation Content")
+    from presentation_generator import generate_all_presentation_content
+    presentation_files = generate_all_presentation_content(
+    topic, report_content
+     )
+    print("\n  ✅ Phase 5 Complete — Presentation content ready!")
 
     # ── DONE! ──────────────────────────────────────────────────
     print_header("🎉 WORKFLOW COMPLETE!")
@@ -190,6 +196,8 @@ def run_research_workflow(topic: str):
     """)
 
     return final_report
+
+
 
 
 # ═══════════════════════════════════════════════════════════
