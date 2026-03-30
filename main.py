@@ -75,7 +75,7 @@ def run_research_workflow(topic: str):
     
     WORKFLOW STEPS:
     ┌─────────────────────────────────────────┐
-    │  Step 1: Gemini researches the topic    │
+    │  Step 1: Groq researches the topic    │
     │  Step 2: Ollama researches the topic    │
     │  Step 3: Results are combined           │
     │  Step 4: Agent 1 (Researcher) organizes │
@@ -93,7 +93,7 @@ def run_research_workflow(topic: str):
     # ── PHASE 1: Gather Raw Research ──────────────────────────
     print_header("📡 PHASE 1: Gathering Research from AI Sources")
 
-    # Query Gemini
+    # Query GROQ
     gemini_result = gemini_research(topic)
     save_to_file(topic, f"# Gemini Research: {topic}\n\n{gemini_result}", "1_gemini_raw")
 
