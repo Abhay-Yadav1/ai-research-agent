@@ -1,6 +1,6 @@
-# research_tools.py
+
 # This file contains the "skills" our AI agents will use.
-# We now use Groq (free, fast) instead of Gemini.
+
 
 import os
 import time
@@ -13,7 +13,7 @@ load_dotenv()
 # Create the Groq client using your API key
 client = Groq(api_key=os.getenv("GROQ_API_KEY"))
 
-# We'll use this model — it's free and very powerful
+
 GROQ_MODEL = "llama-3.3-70b-versatile"
 
 

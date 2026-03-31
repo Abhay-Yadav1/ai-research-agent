@@ -8,11 +8,6 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-# ═══════════════════════════════════════════════════════════
-# Set up Groq LLM for CrewAI to use
-# ═══════════════════════════════════════════════════════════
-# This tells CrewAI: "use Groq as the brain for all agents"
-# groq/ prefix tells CrewAI which provider to use
 groq_llm = LLM(
     model="groq/llama-3.3-70b-versatile",
     api_key=os.getenv("GROQ_API_KEY")
@@ -37,7 +32,6 @@ def create_researcher():
         allow_delegation=False
     )
 
-
 # ═══════════════════════════════════════════════════════════
 # AGENT 2: The Analyst
 # ═══════════════════════════════════════════════════════════
@@ -57,7 +51,6 @@ def create_analyst():
         verbose=True,
         allow_delegation=False
     )
-
 
 # ═══════════════════════════════════════════════════════════
 # AGENT 3: The Writer
