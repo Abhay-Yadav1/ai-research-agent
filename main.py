@@ -1,6 +1,4 @@
-# main.py
-# ═══════════════════════════════════════════════════════════
-# This is the MAIN FILE — run this to start everything!
+
 # 
 # What this file does:
 #   1. Asks you what topic to research
@@ -9,9 +7,7 @@
 #   4. Combines both results
 #   5. Runs 3 AI agents to analyze and write final report
 #   6. Saves everything to the outputs/ folder
-#
-# How to run: python main.py
-# ═══════════════════════════════════════════════════════════
+
 
 import os
 import datetime
