@@ -13,8 +13,6 @@ groq_llm = LLM(
     api_key=os.getenv("GROQ_API_KEY")
 )
 
-
-# ═══════════════════════════════════════════════════════════
 # AGENT 1: The Researcher
 # ═══════════════════════════════════════════════════════════
 def create_researcher():
@@ -32,7 +30,7 @@ def create_researcher():
         allow_delegation=False
     )
 
-# ═══════════════════════════════════════════════════════════
+
 # AGENT 2: The Analyst
 # ═══════════════════════════════════════════════════════════
 def create_analyst():
